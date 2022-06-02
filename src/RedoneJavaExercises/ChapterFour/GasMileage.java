@@ -38,5 +38,9 @@ public class GasMileage {
     public int getTotalGallonsUsed() {
         return totalGallonsUsed;
     }
+
+    public double getMilesDrivenPerGallon(int milesDriven,int gallonsUsed){
+        return(double) milesDriven/gallonsUsed;
+    }
 }
 

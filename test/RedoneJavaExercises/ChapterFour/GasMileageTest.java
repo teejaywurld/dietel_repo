@@ -40,4 +40,13 @@ public class GasMileageTest {
         int totalGallonsUsed = tripRecord.getTotalGallonsUsed();
         assertEquals(86, totalGallonsUsed);
     }
+
+    @Test
+    void testMilesDrivenPerGallon(){
+        tripRecord.setGallonsUsed(10);
+        tripRecord.setMilesDriven(20);
+        double totalValue = tripRecord.getMilesDrivenPerGallon(tripRecord.getMilesDriven(),tripRecord.getGallonsUsed());
+        assertEquals(2, totalValue);
+    }
 }
+
